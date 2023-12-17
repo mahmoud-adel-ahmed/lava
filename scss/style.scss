@@ -201,7 +201,7 @@ section {
   }
 }
 .contact {
-  background: url(./images/footer-bg.png) center center / cover no-repeat;
+  background: url(../images/footer-bg.png) center center / cover no-repeat;
   padding-top: 11%;
   width: 100%;
   padding-bottom: 0%;
@@ -248,7 +248,6 @@ section {
         margin-bottom: 2rem;
         span {
           font-size: 4rem;
-
           color: $yellowish;
         }
       }
@@ -299,7 +298,47 @@ section {
     }
   }
 }
-@media screen and(max-width:992px) {
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    .contact-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      form {
+        flex: 1 1 100%;
+        .inputBox {
+          width: 100%;
+          padding: 3rem;
+          background: #fff;
+          input {
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+          input[type="email"] {
+            margin: 0;
+          }
+          .btn {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+      .contact-info {
+        padding: 0rem;
+        padding-top: 3rem;
+        h3 {
+          font-size: 4rem;
+          color: #fff;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
   html {
     font-size: 57%;
   }
@@ -430,7 +469,7 @@ section {
     }
   }
   .contact {
-    background: url(./images/footer-bg.png) center center / cover no-repeat;
+    background: url(../images/footer-bg.png) center center / cover no-repeat;
     padding-top: 11%;
     width: 100%;
     .contact-content {
@@ -440,8 +479,8 @@ section {
       flex-wrap: wrap;
       form {
         flex: 1 1 100%;
-
         .inputBox {
+          width: 100%;
           padding: 3rem;
           background: #fff;
           input {
@@ -460,6 +499,7 @@ section {
       .contact-info {
         padding: 0rem;
         padding-top: 3rem;
+        display: block;
         h3 {
           font-size: 4rem;
           color: #fff;
